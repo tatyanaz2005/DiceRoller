@@ -47,6 +47,7 @@ button:active{
     var Dice4 = 0;
     var Dice5 = 0;
     var Dice6 = 0;
+    var total = 0;
     function Dice1Func() {
         var randomNum = Math.floor((Math.random() * 6) + 1);
         var Dice1 = randomNum;
@@ -57,8 +58,9 @@ button:active{
         var Dice1 = randomNum;
         var randomNum2 = Math.floor((Math.random() * 6) + 1);
         var Dice2 = randomNum2;
+        var total = Dice1 + Dice2;
          document.getElementById("ResultsPara").innerHTML = "Your Results <br> Dice 1:  <b>" + Dice1
-         + "</b><br> Dice 2: <b>" + Dice2;
+         + "</b><br> Dice 2: <b>" + Dice2 + "</b><br> Total: <b>" + total;
         }
     function Dice3Func() {
          var randomNum = Math.floor((Math.random() * 6) + 1);
@@ -67,8 +69,9 @@ button:active{
         var Dice2 = randomNum2;
         var randomNum3 = Math.floor((Math.random() * 6) + 1);
         var Dice3 = randomNum3;
+        var total = Dice1 + Dice2 + Dice3;
         document.getElementById("ResultsPara").innerHTML = "Your Results <br> Dice 1: <b>" + Dice1
-            + "</b><br> Dice 2: <b>"+ Dice2 + "</b><br> Dice 3: <b>" + Dice3;
+            + "</b><br> Dice 2: <b>"+ Dice2 + "</b><br> Dice 3: <b>" + Dice3 + "</b><br> Total: <b>" + total;
         }
     function Dice4Func() {
         var randomNum = Math.floor((Math.random() * 6) + 1);
@@ -79,8 +82,10 @@ button:active{
         var Dice3 = randomNum3;
         var randomNum4 = Math.floor((Math.random() * 6) + 1);
         var Dice4 = randomNum4;
+        var total = Dice1 + Dice2 + Dice3 + Dice4;
         document.getElementById("ResultsPara").innerHTML = "Your Results <br> Dice 1: <b>" + Dice1
-            + "</b><br> Dice 2: <b>" + Dice2 + "</b><br> Dice 3: <b>" + Dice3 + "</b><br> Dice 4: <b>" + Dice4;
+            + "</b><br> Dice 2: <b>" + Dice2 + "</b><br> Dice 3: <b>" + Dice3 + "</b><br> Dice 4: <b>" + Dice4
+            + "</b><br> Total: <b>" + total;
         }
     function Dice5Func() {
         var randomNum = Math.floor((Math.random() * 6) + 1);
@@ -93,9 +98,10 @@ button:active{
         var Dice4 = randomNum4;
         var randomNum5 = Math.floor((Math.random() * 6) + 1);
         var Dice5 = randomNum5;
+        var total = Dice1 + Dice2 + Dice3 + Dice4 + Dice5;
         document.getElementById("ResultsPara").innerHTML = "Your Results <br> Dice 1: <b>" + Dice1
         + "</b><br> Dice 2: <b>" + Dice2 + "</b><br> Dice 3: <b>" + Dice3 + "</b><br> Dice 4: <b>" + Dice4 
-        + "</b><br> Dice 5: <b>" + Dice5;
+        + "</b><br> Dice 5: <b>" + Dice5 + "</b><br> Total: <b>" + total;
         }
     function Dice6Func() {
         var randomNum = Math.floor((Math.random() * 6) + 1);
@@ -109,10 +115,11 @@ button:active{
         var randomNum5 = Math.floor((Math.random() * 6) + 1);
         var Dice5 = randomNum5;
         var randomNum6 = Math.floor((Math.random() * 6) + 1);
-        var Dice6 = randomNum6;    
+        var Dice6 = randomNum6; 
+        var total = Dice1 + Dice2 + Dice3 + Dice4 + Dice5 + Dice6;   
         document.getElementById("ResultsPara").innerHTML = "Your Results <br> Dice 1: <b>" + Dice1
         + "</b><br> Dice 2: <b>" + Dice2 + "</b><br> Dice 3: <b>" + Dice3 + "</b><br> Dice 4: <b>" + Dice4
-        + "</b><br> Dice 5: <b>" + Dice5 + "</b><br> Dice 6: <b>" + Dice6;
+        + "</b><br> Dice 5: <b>" + Dice5 + "</b><br> Dice 6: <b>" + Dice6 + "</b><br> Total: <b>" + total;
         }
     </script>
 </body>
