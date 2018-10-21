@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <title>Random Dice</title>
+    <style>
+body {
+background-color: #c0ffd5;
+  text-align: center;
+  font-size: 30px;
+  color:#b8860b;
+  font-family: 'Poiret One', cursive;
+}
+button {
+    background-color: #ffc0cb;
+font-size: 30px;
+padding: 15px 32px;
+border: 2px solid #705107;
+display: inline-block;
+text-decoration: none;
+}
+button:active{
+    box-shadow: 0 4px #666655;
+  transform: translateY(4px);
+}
+    </style>
+</head>
+<body>
+    <h1>Dice Roller</h1>
+    <div id="NumOfDice" class="NumOfDice">
+        <h1>How many dice will you roll?</h1>
+        <button type="button" id="NumOfDice1" class="NumOfDice1" onclick="Dice1Func()" >1 Die</button>
+        <button type="button" id="NumOfDice2" class="NumOfDice1" onclick="Dice2Func()">2 Dice</button>
+        <button type="button" id="NumOfDice3" class="NumOfDice1" onclick="Dice3Func()">3 Dice</button>
+        <button type="button" id="NumOfDice4" class="NumOfDice1" onclick="Dice4Func()">4 Dice</button>
+        <button type="button" id="NumOfDice5" class="NumOfDice1" onclick="Dice5Func()">5 Dice</button>
+        <button type="button" id="NumOfDice6" class="NumOfDice1" onclick="Dice6Func()">6 Dice</button>
+     </div>
+     <p id="ResultsPara"> </p>
+    <script>
+    var Dice1 = 0;
+    var Dice2 = 0;
+    var Dice3 = 0;
+    var Dice4 = 0;
+    var Dice5 = 0;
+    var Dice6 = 0;
+    function Dice1Func() {
+        var randomNum = Math.floor((Math.random() * 6) + 1);
+        var Dice1 = randomNum;
+        document.getElementById("ResultsPara").innerHTML="Your Results <br> Dice 1: <b>" + Dice1;
+        }
+    function Dice2Func() {
+        var randomNum = Math.floor((Math.random() * 6) + 1);
+        var Dice1 = randomNum;
+        var randomNum2 = Math.floor((Math.random() * 6) + 1);
+        var Dice2 = randomNum2;
+         document.getElementById("ResultsPara").innerHTML = "Your Results <br> Dice 1:  <b>" + Dice1
+         + "</b><br> Dice 2: <b>" + Dice2;
+        }
+    function Dice3Func() {
+         var randomNum = Math.floor((Math.random() * 6) + 1);
+        var Dice1 = randomNum;
+        var randomNum2 = Math.floor((Math.random() * 6) + 1);
+        var Dice2 = randomNum2;
+        var randomNum3 = Math.floor((Math.random() * 6) + 1);
+        var Dice3 = randomNum3;
+        document.getElementById("ResultsPara").innerHTML = "Your Results <br> Dice 1: <b>" + Dice1
+            + "</b><br> Dice 2: <b>"+ Dice2 + "</b><br> Dice 3: <b>" + Dice3;
+        }
+    function Dice4Func() {
+        var randomNum = Math.floor((Math.random() * 6) + 1);
+        var Dice1 = randomNum;
+        var randomNum2 = Math.floor((Math.random() * 6) + 1);
+        var Dice2 = randomNum2;
+        var randomNum3 = Math.floor((Math.random() * 6) + 1);
+        var Dice3 = randomNum3;
+        var randomNum4 = Math.floor((Math.random() * 6) + 1);
+        var Dice4 = randomNum4;
+        document.getElementById("ResultsPara").innerHTML = "Your Results <br> Dice 1: <b>" + Dice1
+            + "</b><br> Dice 2: <b>" + Dice2 + "</b><br> Dice 3: <b>" + Dice3 + "</b><br> Dice 4: <b>" + Dice4;
+        }
+    function Dice5Func() {
+        var randomNum = Math.floor((Math.random() * 6) + 1);
+        var Dice1 = randomNum;
+        var randomNum2 = Math.floor((Math.random() * 6) + 1);
+        var Dice2 = randomNum2;
+        var randomNum3 = Math.floor((Math.random() * 6) + 1);
+        var Dice3 = randomNum3;
+        var randomNum4 = Math.floor((Math.random() * 6) + 1);
+        var Dice4 = randomNum4;
+        var randomNum5 = Math.floor((Math.random() * 6) + 1);
+        var Dice5 = randomNum5;
+        document.getElementById("ResultsPara").innerHTML = "Your Results <br> Dice 1: <b>" + Dice1
+        + "</b><br> Dice 2: <b>" + Dice2 + "</b><br> Dice 3: <b>" + Dice3 + "</b><br> Dice 4: <b>" + Dice4 
+        + "</b><br> Dice 5: <b>" + Dice5;
+        }
+    function Dice6Func() {
+        var randomNum = Math.floor((Math.random() * 6) + 1);
+        var Dice1 = randomNum;
+        var randomNum2 = Math.floor((Math.random() * 6) + 1);
+        var Dice2 = randomNum2;
+        var randomNum3 = Math.floor((Math.random() * 6) + 1);
+        var Dice3 = randomNum3;
+        var randomNum4 = Math.floor((Math.random() * 6) + 1);
+        var Dice4 = randomNum4;
+        var randomNum5 = Math.floor((Math.random() * 6) + 1);
+        var Dice5 = randomNum5;
+        var randomNum6 = Math.floor((Math.random() * 6) + 1);
+        var Dice6 = randomNum6;    
+        document.getElementById("ResultsPara").innerHTML = "Your Results <br> Dice 1: <b>" + Dice1
+        + "</b><br> Dice 2: <b>" + Dice2 + "</b><br> Dice 3: <b>" + Dice3 + "</b><br> Dice 4: <b>" + Dice4
+        + "</b><br> Dice 5: <b>" + Dice5 + "</b><br> Dice 6: <b>" + Dice6;
+        }
+    </script>
+</body>
+</html>
